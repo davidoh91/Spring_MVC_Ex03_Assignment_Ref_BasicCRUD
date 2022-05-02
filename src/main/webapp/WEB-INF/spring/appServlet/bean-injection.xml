@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- inject 3 Product instances -->
+    <bean class="dto.ProductDTO" id="product1">
+        <property name="code" value="1111" />
+        <property name="name" value="Vegan Beef" />
+        <property name="price" value="6000" />
+        <property name="detail" value="Vegan BeefVegan BeefVegan BeefVegan BeefVegan Beef" />
+    </bean>
+
+    <bean class="dto.ProductDTO" id="product2">
+        <property name="code" value="2222" />
+        <property name="name" value="Vegan Snack" />
+        <property name="price" value="2000" />
+        <property name="detail" value="Vegan SnackVegan SnackVegan SnackVegan SnackVegan Snack" />
+    </bean>
+
+    <bean class="dto.ProductDTO" id="product3">
+        <property name="code" value="3333" />
+        <property name="name" value="Vegan Ice Cream" />
+        <property name="price" value="3000" />
+        <property name="detail" value="Vegan Ice CreamVegan Ice CreamVegan Ice CreamVegan Ice CreamVegan Ice Cream" />
+    </bean>
+</beans>
